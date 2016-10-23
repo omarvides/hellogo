@@ -1,7 +1,13 @@
+//My hello world application, prints a hello world
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/omarvides/hellogo/helpers"
+)
 
 func main() {
-	fmt.Println("Hello, this is my go app")
+	x := helpers.AddPrefix("-prefixed")
+	fmt.Println("	The value is", x)
 }
