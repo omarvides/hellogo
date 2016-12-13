@@ -16,10 +16,10 @@ func GetSub(base int) func(int) int {
 	}
 }
 
-// GetDiv function Receives a base number (float32) and returns a function that receives a value (float32) and returns
+// GetDiv function Receives a base number (float64) and returns a function that receives a value (float64) and returns
 // the divition of the base and the value passed
-func GetDiv(base float32) func(float32) float32 {
-	return func(value float32) float32 {
+func GetDiv(base float64) func(float64) float64 {
+	return func(value float64) float64 {
 		return value / base
 	}
 }
